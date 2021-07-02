@@ -10,10 +10,14 @@ Built with :heart: by OpenZeppelin.
 
 ## Usage
 
-> **Note:** Detailed usage information is not available yet. Please be patient!
+> **Note:** Detailed steps:
+- uses: actions/checkout@v2
+- uses: actions/setup-go@v2
+  with:
+    stable: 'false'
+    go-version: '1.14.0-rc1' # The Go version to download (if necessary) and use.
+- run: go version
 
-```sh
-npm install solidity-docgen
 ```
 
 `solidity-docgen` takes as input a directory of contracts and `README`
